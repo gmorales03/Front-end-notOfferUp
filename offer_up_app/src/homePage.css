@@ -1,0 +1,47 @@
+.container{
+    display: grid; 
+    background-color:#EFEFED; 
+    color: black; 
+    grid-template-columns: [first] 200px [second] 200px [third] 200px [fourth] 200px;
+    grid-template-rows: [row1] 50px [row2] 200px [row3] 200px [row4] 200px;
+    column-gap: 25px; 
+    row-gap: 40px; 
+    margin: 10px;  
+    padding: 40px; 
+}
+
+.navBar{
+    grid-column-start: first;
+    grid-column-end: span 4; 
+    grid-row-start: row1;
+    grid-row-end: span 1; 
+    background-color: gray;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+li{
+   display: inline-block;
+   margin: 10px; 
+}
+
+.grid{
+    grid-column-start: first; 
+    grid-column-end: span 4; 
+    grid-row-start: row2;
+    grid-row-end: span 3; 
+    background-color: gray;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box{
+  background-color: #EFEFED;
+  height: 200px; 
+  width: 200px;
+  margin: 10px; 
+}
