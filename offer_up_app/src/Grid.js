@@ -13,6 +13,7 @@ export default function Grid() {
         <div className='box'>8</div>
         <div className='box'>9</div>
         <div className='box'>10</div>
+        <div className='box'>11</div>
     </div>
   )
 }

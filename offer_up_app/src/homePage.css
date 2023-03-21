@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: grid; 
     background-color:#EFEFED; 
     color: black; 
@@ -8,13 +8,9 @@
     row-gap: 40px; 
     margin: 10px;  
     padding: 40px; 
-}
+} */
 
 .navBar{
-    grid-column-start: first;
-    grid-column-end: span 4; 
-    grid-row-start: row1;
-    grid-row-end: span 1; 
     background-color: gray;
 }
 
@@ -28,6 +24,10 @@ li{
    margin: 10px; 
 }
 
+li:hover{
+    color: white; 
+}
+
 .grid{
     grid-column-start: first; 
     grid-column-end: span 4; 
@@ -36,12 +36,23 @@ li{
     background-color: gray;
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start; 
 }
 
 .box{
   background-color: #EFEFED;
   height: 200px; 
   width: 200px;
-  margin: 10px; 
+  margin: 5px;
+}
+
+.newListing{
+    position: absolute; 
+    right: 5px; 
+    top: 20px;
+    color: white;
+}
+
+.newListing:hover{
+    color: black; 
 }
