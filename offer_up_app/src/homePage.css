@@ -1,0 +1,49 @@
+.navBar{
+    background-color: gray;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+li{
+   display: inline-block;
+   margin: 10px; 
+}
+
+li:hover{
+    color: white; 
+}
+
+.boxes{
+    background-color: white;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+
+.box{
+  background-color: #EFEFED;
+  height: 150px; 
+  width: 150px;
+  margin: 40px;
+  border-radius: 5%;
+   
+}
+.listing{
+    position: relative; 
+    top: 160px; 
+    height: 40px;
+}
+
+.newListing{
+    position: absolute; 
+    right: 5px; 
+    top: 20px;
+    color: white;
+}
+
+.newListing:hover{
+    color: black; 
+}
