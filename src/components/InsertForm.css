@@ -1,0 +1,42 @@
+html {
+  box-sizing: content-box;
+  background-color: rgb(24, 26, 27);
+  color: rgb(219, 216, 212);
+}
+
+div {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+  color: rgb(86, 255, 213);
+}
+
+input {
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(24, 26, 27);
+  color: rgb(219, 216, 212);
+  border: 1px solid rgb(134, 124, 110);
+  border-radius: 10px;
+  width: 600px;
+  font-size: larger;
+  align-items: start;
+}
+
+.insert-form-container {
+  display: flexbox;
+  padding: 10px;
+}
+
+#desc {
+  height: 250px;
+  text-align: justify;
+}
+
+#desc::placeholder {
+  transform: translateY(-500%) !important;
+}

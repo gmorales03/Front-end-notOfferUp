@@ -30,6 +30,10 @@ describe("Form component to insert product", () => {
   });
 
   it("should have a p tag with the date posted", () => {
-    expect(component.contains(<p id="date">Date Posted</p>)).toBe(true);
+    expect(component.contains(<p id="date">Date Posted:</p>)).toBe(true);
+  });
+
+  it("should have a submit button", () => {
+    expect(component.contains(<button id="submit">Submit</button>)).toBe(true);
   });
 });
