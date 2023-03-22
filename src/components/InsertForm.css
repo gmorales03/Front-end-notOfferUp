@@ -27,6 +27,14 @@ input {
   align-items: start;
 }
 
+button {
+  padding: 10px;
+  width: 160px;
+  background-color: rgb(86, 255, 213);
+  border: none;
+  border-radius: 10px;
+}
+
 .insert-form-container {
   display: flexbox;
   padding: 10px;
