@@ -1,0 +1,36 @@
+*{
+    border: 1px solid red;
+
+}
+.title{
+    left: 3px;
+    position: absolute;
+    margin-top: 350px;
+
+}
+
+.description{
+left: 3px;
+position: absolute;
+margin-top: 400px;
+
+}
+
+.price{
+    left: 3px;
+    position: absolute;
+    margin-top: 420px;
+
+
+}
+
+.date{
+   left : 3px;
+   position: absolute;
+   margin-top: 460px;
+}
+
+.img {
+    height : 100px;
+    width : 100px;
+}
