@@ -1,9 +1,9 @@
-import React from "react";
+import img from "./imgfolder/IMG-5020.JPG";
 
 function Images() {
   return (
     <div className="Images">
-      <img src="./imgfolder/IMG-5020.JPG"></img>
+      <img src={img} alt="shoes" height={350} width={300} />
     </div>
   );
 }
