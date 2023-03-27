@@ -13,8 +13,8 @@ function ProductPage() {
       <div className="img">
         <Image />
       </div>
-      <Description />
       <Price />
+      <Description />
       <Date />
     </div>
   );
