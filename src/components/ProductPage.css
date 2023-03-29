@@ -5,6 +5,8 @@
   
 }
 .title{
+    font-size: large;
+    color: whitesmoke;
     left: 3px;
     position: absolute;
     margin-top: 500px;
@@ -18,22 +20,25 @@ div{
 
 .price{
     left: 15px;
+    font-size: medium;
     position: absolute;
-    margin-top: 55px;
+    margin-top: 60px;
 }
    
 
 .description{
     left: 15px;
     position: absolute;
-    margin-top: 100px
+    margin-top: 105px
 };
     
 .date{
-    
+    left: 20px;
+    position: absolute;
+    margin-top: 110px
 };
 
-.img{
+.imgs{
    display: block;
    margin-left: auto;
    margin-right: auto;
