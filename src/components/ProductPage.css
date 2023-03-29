@@ -1,42 +1,41 @@
 *{
     border: 1px solid red;
+    color: white;
 
   
 }
 .title{
     left: 3px;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 500px;
 
 };
 
-
 div{
-    text-align: left;
-  
+    position: absolute;
 }
 
 
 .price{
     left: 15px;
     position: absolute;
-    margin-top: 400;
+    margin-top: 55px;
 }
    
 
-.Description{
-  text-align: left;
-    position: left;
-    margin-top: 400px;
-        
+.description{
+    left: 15px;
+    position: absolute;
+    margin-top: 100px
 };
     
 .date{
-    display: left;
-    position: absolute;
-    margin-top: 460px;
-};
     
-.Images{
-  
 };
+
+.img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%; 
+}
