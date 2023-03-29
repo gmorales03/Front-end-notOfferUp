@@ -1,3 +1,4 @@
+import { async } from "q";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import HomePage from "./components/HomePage.js";
@@ -7,20 +8,22 @@ import NewListing from "./components/NewListing.js";
 function App() {
   const url = "http://localhost:3000/product/";
   const [listings, setListings] = useState([]);
+
   useEffect(() => {
-    fetch(url, {
-      mode: "no-cors",
-    })
+    fetch(url)
       .then((res) => res.json())
-      .then((data) => console.log(data.data))
+      .then((data) => {
+        setListings(data);
+      })
       .catch((err) => console.log("oops, something went wrong", err));
-  });
+  }, []);
+
+  console.log(listings);
 
   return (
     <div className="App">
-      <HomePage />
+      <HomePage data={listings} />
       <InsertForm />
-      <NewListing />
     </div>
   );
 }
