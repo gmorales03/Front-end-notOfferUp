@@ -8,7 +8,7 @@ h1 {
     font-size: 45spx;
     left: 15px;
     position: absolute;
-    margin-top: 550px;
+    margin-top: 500px;
 
 };
 
@@ -21,25 +21,24 @@ div {
     left: 15px;
     font-size: medium;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 18px;
 }
    
 
 .description {
     left: 15px;
     position: absolute;
-    margin-top: 105px
+    margin-top: 60px
 }
     
  .date{
     left: 15px;
     position: absolute;
-    margin-top: 135px
+    margin-top: 90px
 }
 
 .img {
    display: block;
    margin-left: auto;
    margin-right: auto;
-
 }
