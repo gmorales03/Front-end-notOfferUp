@@ -2,7 +2,9 @@ import React from 'react'
 
 function Clothing() {
   return (
-    <div>Clothing</div>
+    <div className='clothing'>
+      <h1>Clothing</h1>
+      </div>
   )
 }
 

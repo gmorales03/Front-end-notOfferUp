@@ -2,7 +2,9 @@ import React from 'react'
 
 function Appliances() {
   return (
-    <div>Appliances</div>
+    <div className='applicances'>
+      <h1>Appliances</h1>
+      </div>
   )
 }
 
