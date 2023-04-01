@@ -6,6 +6,7 @@ import NewListing from "./NewListing";
 import "./homePage.css";
 
 export default function HomePage(props) {
+  console.log(props); 
   const products = props.data.map(
     ({ _id, item, title, description, price, posted_at }) => {
       return (
