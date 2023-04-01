@@ -1,4 +1,5 @@
 import "./App.css";
+import HomePage from "./components/HomePage.js";
 import InsertForm from "./components/InsertForm.js";
 import NewListing from "./components/NewListing.js";
 import ProductPage from "./components/ProductPage.js";
@@ -6,9 +7,9 @@ import ProductPage from "./components/ProductPage.js";
 function App() {
   return (
     <div className="App">
-      {/* <InsertForm /> */}
-      {/* <NewListing /> */}
-      <ProductPage />
+      <HomePage />
+      <InsertForm />
+      <NewListing />
     </div>
   );
 }
