@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"
+import Listing from "./Listing"
 
 export default function NavBar() {
-  return (
-    <div className="navBar">
-      <ul>
-        <li>category one</li>
-        <li>category two</li>
-        <li>category three</li>
-      </ul>
-    </div>
-  );
+  const url = "http://localhost:3000/category/";
+  const [category, setCategory] = useState([]);
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setCategory(data);
+      })
+      .catch((err) => console.log("check your code, error", err));
+  }, []);
+  const cat = category.map(({ title }) => {
+    return <Link to={`/${title}`}><ul>{title}</ul></Link>;
+  });
+  console.log(cat.title);
+  console.log(category);
+  return <div className="navBar">{cat}</div>;
 }

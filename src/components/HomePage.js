@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import { Link } from 'react-router-dom'
 import Box from "./Box.js";
 import Grid from "./Grid";
 import NewListing from "./NewListing";
@@ -20,7 +21,8 @@ export default function HomePage(props) {
 
   const databox = (
     <div className="container">
-      <NavBar />
+       <NavBar /> 
+
       <div className="boxes">{products}</div>
     </div>
   );

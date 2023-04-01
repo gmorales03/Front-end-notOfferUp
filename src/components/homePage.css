@@ -1,18 +1,16 @@
 .navBar{
-    background-color: gray;
+    color: rgb(86, 255, 213);
+    font-weight: 700;
 }
 
 ul{
     list-style-type: none;
     text-align: left;
+    display: inline-block; 
 }
 
-li{
-   display: inline-block;
-   margin: 10px; 
-}
 
-li:hover{
+ul:hover{
     color: white; 
 }
 
