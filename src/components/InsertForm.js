@@ -8,11 +8,13 @@ export default function InsertForm() {
 
   function handleClick(e) {
     e.preventDefault();
-    // const req = { item: item, description: description, price: price };
     const req = { item, description, price };
 
     fetch("http://localhost:3000/product/", {
       method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
       body: JSON.stringify(req),
     }).then(console.log("new product added", req));
   }
