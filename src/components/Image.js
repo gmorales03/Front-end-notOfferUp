@@ -1,5 +1,3 @@
-import img from "./imgfolder/IMG-5020.JPG";
-
 function Images() {
   return (
     <div className="Imgs">
