@@ -8,6 +8,7 @@ import { Routes, Route, Link} from "react-router-dom";
 import Listing from "../src/components/Listing"
 
 import NewListing from "./components/NewListing.js";
+import ProductPage from "./components/ProductPage.js";
 
 function App() {
   const url = "http://localhost:3000/product/";
@@ -15,16 +16,14 @@ function App() {
 
   useEffect(() => {
     fetch(url)
-      .then((res) => {res.json()
-      console.log(res)
-      })
+      .then((res) => res.json())
       .then((data) => {
         setListings(data);
       })
       .catch((err) => console.log("oops, something went wrong", err));
   }, []);
 
-  // console.log(listings);
+
 
   return (
     <div className="App">
@@ -37,6 +36,7 @@ function App() {
         <Route path="/random" element={<Random />} />
         <Route path="/add listing" element={<InsertForm />} />
       </Routes>
+
     </div>
   );
 }
