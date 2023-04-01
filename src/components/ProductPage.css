@@ -1,5 +1,4 @@
 *{
-    border: 1px solid red;
     color: white;
 
   
@@ -30,17 +29,17 @@ div {
     left: 15px;
     position: absolute;
     margin-top: 105px
-};
+}
     
-.date {
-    left: 20px;
+ .date{
+    left: 15px;
     position: absolute;
-    margin-top: 110px
-};
+    margin-top: 135px
+}
 
-.imgs {
+.img {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   width: 50%; 
+
 }
