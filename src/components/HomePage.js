@@ -1,11 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
+import { Link } from 'react-router-dom'
 import Box from "./Box.js";
 import Grid from "./Grid";
 import NewListing from "./NewListing";
 import "./homePage.css";
 
 export default function HomePage(props) {
+  console.log(props); 
   const products = props.data.map(
     ({ _id, item, title, description, price, posted_at }) => {
       return (
@@ -20,7 +22,7 @@ export default function HomePage(props) {
 
   const databox = (
     <div className="container">
-      <NavBar />
+       <NavBar /> 
       <div className="boxes">{products}</div>
     </div>
   );
