@@ -7,9 +7,10 @@ import "./homePage.css";
 
 export default function HomePage(props) {
   const products = props.data.map(
-    ({ _id, item, title, description, price, posted_at }) => {
+    ({ _id, image, item, title, description, price, posted_at }) => {
       return (
         <div className="box">
+          <img src={image}></img>
           <p>{item}</p>
           <p>{price}</p>
           <p>{posted_at}</p>
