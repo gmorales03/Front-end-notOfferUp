@@ -3,9 +3,14 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import HomePage from "./components/HomePage.js";
 import InsertForm from "./components/InsertForm.js";
-import { Appliances, Clothing, Electronics, Random } from "./components/categories/index.js";
-import { Routes, Route, Link} from "react-router-dom";
-import Listing from "../src/components/Listing"
+import {
+  Appliances,
+  Clothing,
+  Electronics,
+  Random,
+} from "./components/categories/index.js";
+import { Routes, Route, Link } from "react-router-dom";
+import Listing from "../src/components/Listing";
 
 import NewListing from "./components/NewListing.js";
 
@@ -15,22 +20,20 @@ function App() {
 
   useEffect(() => {
     fetch(url)
-      .then((res) => {res.json()
-      console.log(res)
-      })
+      .then((res) => res.json())
       .then((data) => {
         setListings(data);
       })
       .catch((err) => console.log("oops, something went wrong", err));
   }, []);
 
-  // console.log(listings);
+  console.log(listings);
 
   return (
     <div className="App">
-      <HomePage data={listings} />
+      {/* <HomePage data={listings} /> */}
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<HomePage data={listings} />} />
         <Route path="/appliances" element={<Appliances />} />
         <Route path="/clothing" element={<Clothing />} />
         <Route path="/electronics" element={<Electronics />} />
