@@ -1,5 +1,14 @@
-import React from "react";
+import { useParams, useLocation } from 'react-router-dom'
 
-export default function Listing() {
-  return <div className="listing">Sample listing, price</div>;
+export default function Listing(props) {
+  let params = useParams(); 
+  let location = useLocation(); 
+  return( 
+    <div className='pageDetail'>
+      <h1>{location.state.item}</h1>
+      <h3>{location.state.price}</h3>
+      <h3>{location.state.description}</h3>
+      <h3>{location.state.posted_at}</h3>
+    </div>
+  )
 }

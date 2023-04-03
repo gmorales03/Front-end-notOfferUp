@@ -39,6 +39,7 @@ function App() {
         <Route path="/electronics" element={<Electronics />} />
         <Route path="/random" element={<Random />} />
         <Route path="/add listing" element={<InsertForm />} />
+        <Route path="/:listingId" element={<Listing/>} />
       </Routes>
     </div>
   );
