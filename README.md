@@ -8,7 +8,7 @@ For this project, we decided to build an OfferUp app. We liked this project beca
 One of our most successful features is our `AddListing` feature which allows users to RESTfully create resources that are logged in the backend database. This was one of the more challenging aspects but we figured it out after reading a lot about Cross-Origin Resource Sharing (CORS). The databases were challenging to work with mainly for this reason. We learned a bit about adjusting CORS headers and the mechanism of transfering data from server to browser. 
 
 ### Testing
-AJ was able to figure out how to implement testing strategies into our front-end code. We used Enzyme, a React-specific testing utility, to build and implement tests and flag. We imported Shallow to simulate user events with the `AddListing` component. 
+AJ was able to figure out how to implement testing strategies into our front-end code. We are working with a growing codebase and we figured using tests would help us debug when needed. We used Enzyme, a React-specific testing utility, to build and implement tests and flag. We imported Shallow to simulate user events with the `AddListing` component. 
 
 ### CORB Bugs
 One of the biggest front-end issues we're stil working with is the trouble of getting images to reliably populate. We're working through a Cross-Origin Read Blocking error that prevents our browser from rendering URL links in our database. 
