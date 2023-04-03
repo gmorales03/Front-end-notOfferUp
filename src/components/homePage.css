@@ -1,12 +1,15 @@
 .navBar{
     color: rgb(86, 255, 213);
     font-weight: 700;
+    text-decoration: none;
 }
 
 ul{
     list-style-type: none;
     text-align: left;
     display: inline-block; 
+    text-decoration: none;
+    color: rgb(86, 255, 213);
 }
 
 
@@ -32,8 +35,8 @@ ul:hover{
 .homepageImages{
  transform: scale(0.15) translate(-275%, -275%);
  height: 150px;
- width: 150px; 
-}
+ width: 150px;  
+ } 
 
 
 .listing{

@@ -26,7 +26,7 @@ export default function HomePage(props) {
 
               <div className="homepageImages">
                 <div className="imageOne">
-                  <img src={shoeOne} alt="product" />
+                  <img src={image} alt="product" />image goes here
                 </div>
               </div>
               {item}
