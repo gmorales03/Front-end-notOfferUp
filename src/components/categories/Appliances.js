@@ -1,12 +1,12 @@
 import { useParams, useLocation } from 'react-router-dom'
 
 function Appliances( props) {
-  let location =useLocation()
-  let params = useParams()
-  console.log(location.state.item); 
+ console.log(props)
+  
   return (
     <div className='applicances'>
       <h1>Appliances</h1>
+      <h1>hello world</h1>
       </div>
   )
 }

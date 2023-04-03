@@ -5,6 +5,7 @@ export default function Listing(props) {
   let location = useLocation(); 
   return( 
     <div className='pageDetail'>
+      <img src={location.state.image}/>
       <h1>{location.state.item}</h1>
       <h3>{location.state.price}</h3>
       <h3>{location.state.description}</h3>
