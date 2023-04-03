@@ -29,6 +29,13 @@ ul:hover{
   border-radius: 5%;
    
 }
+.homepageImages{
+ transform: scale(0.15) translate(-275%, -275%);
+ height: 150px;
+ width: 150px; 
+}
+
+
 .listing{
     position: relative; 
     top: 160px; 

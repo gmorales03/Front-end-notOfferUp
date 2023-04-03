@@ -27,7 +27,7 @@ function App() {
       .catch((err) => console.log("oops, something went wrong", err));
   }, []);
 
-  console.log(listings);
+  // console.log(listings);
 
   return (
     <div className="App">
